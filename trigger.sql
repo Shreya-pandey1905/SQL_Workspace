@@ -105,3 +105,4 @@ delimiter ;
 delete from emp where id =12;
    
  select * from deleteHistory;
+ delete from emp;
