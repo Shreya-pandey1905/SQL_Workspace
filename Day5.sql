@@ -97,12 +97,13 @@ select @bonus;
 -- 3 login executes on database server
 
 -- # handling exception with help of stored procedure
-declare handler_action handler for condition_value handler_exception statment
--- handler_action => uses exit to stop execution of a blok or continue to keep running
+-- declare handler_action handler for condition_value handler_exception statement
+-- handler_action => uses exit to stop execution of a block or continue to keep running
 -- condition_value => it uses genaric classes like sqlexception is handler for all else,sqlwarning(this for warning),not found(no rows / end of cursor),signal(similar to throw in java it tell my sql  to stop execution and generate an error)
 -- sql_state=> its 5 character error code 
 -- mysql uses sql state to chatagories the error
-02000 => no data found
-23000 => constraints voilated
-42000 => syntax error
-45000 => user define exception
+-- 02000 => no data found
+-- 23000 => constraints voilated
+-- 42000 => syntax error
+-- 45000 => user define exception
+
